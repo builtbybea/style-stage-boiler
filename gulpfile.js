@@ -29,4 +29,4 @@ gulp.task('watch', function(){
   gulp.watch('app/*.html', gulp.parallel('html'))
 });
 
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch'));
+gulp.task('run', gulp.parallel('scss', 'browser-sync', 'watch'));
