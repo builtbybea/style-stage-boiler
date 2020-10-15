@@ -1,1 +1,283 @@
 /// Add your SCSS in here, it will autocompile to style.css
+@font-face{
+    font-family: 'Pricedown', Fallback, sans-serif;
+    src: url('PricedownBl-Regular.ttf') format('truetype');
+    src: url('PricedownBl-Regular.woff') format('woff');
+    src: url('PricedownBl-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Rage', Fallback, sans-serif;
+    src: url('Rage.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vice City Sans', sans-serif;
+    src: url('Vice City Sans.ttf') format('truetype');
+}
+
+
+
+$font-primary: 'Pricedown';
+$font-secondary: 'Rage';
+$body-font: 'Vice City Sans';
+$font-color-primary: rgb(255, 255, 255);
+$footer-font-color: rgba(36,16,71,1);
+$bg-color: rgb(244, 175, 194);
+$bg-gradient: 
+linear-gradient(180deg, rgba(111,46,155,1) 0%, rgba(175,52,131,1) 20%, rgba(103, 39, 98,1) 40%,
+ rgba(111,46,155,1) 60%, rgba(175,52,131,1) 80%, rgba(36,16,71,1) 100%);
+$bg-grid-gradient:  
+linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+$nav-bg-color: rgba(255, 250, 250, 0.938);
+$svg-color: rgb(224, 154, 24);
+$svg-outline: rgb(0, 0, 0);
+
+//$font-size-h1: 8.5em;
+//
+
+%svg-shared {
+    fill: $svg-color;
+    stroke: $svg-outline;
+    stroke-width: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+%neon-shadow-glow {
+    text-shadow: 3px 3px #ff4da6; 
+    // animation: glow 3s ease-in-out infinite alternate;
+}
+
+//neon glow animation
+// @keyframes glow {
+//     from {
+//         text-shadow: 0 3px 3px #ff4da6, 0 0 60px #e60073 ;
+//     }
+//     to {
+//         text-shadow: 0 0 30px #e60073, 0 0 60px #e60073, 0 3px 3px #ff4da6,;
+//     }
+// }
+
+body{
+    overflow-x: hidden;
+    //gradient effect 
+    color: $font-color-primary;
+    background-color: $bg-color; 
+    background: $bg-gradient;
+    font-family: $body-font;
+    
+    margin: 0;
+    .skip-link {
+        display: none;
+    }
+    a {
+    font-family: $font-primary;
+    text-decoration: none;
+    color: $font-color-primary;
+    -webkit-text-stroke: 2.5px black;
+    font-size: 1.3em;
+    }
+    a:hover {
+        text-decoration: underline;
+        }
+}
+
+body::before{
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+    background: $bg-grid-gradient;
+    z-index: 2;
+    background-size: 100% 5px, 5px 100%;
+    pointer-events: none;
+}
+
+
+header {
+    background-image: url('http://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Silhouettes-PNG/Palm_Trees_Silhouette_PNG_Clip_Art_Image.png?m=1463584089');
+  
+    // Palm_Trees_Silhouette_PNG_Clip_Art_Image
+
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: center;
+    
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-family: $font-primary;
+        -webkit-text-stroke: 8px black;
+        font-size: 8.5em;
+        margin: 0;
+    }
+    h2 {
+        @extend %neon-shadow-glow;
+        font-family: $font-secondary;
+        font-size: 2.5em;
+        text-decoration: underline;
+        transform: rotate(-3.5deg);
+    }
+    P {
+        font-size: 1.5em;
+        margin-bottom: 1.6em;
+    }
+
+    .link-github {
+        
+        font-size: 1.6em;
+        svg {
+            @extend %svg-shared;
+        }
+    }
+    
+}
+
+nav {
+    background-color: $nav-bg-color;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    ul { 
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.5em;
+        font-size: 1.3em;
+    }
+}
+
+strong {
+    font-family: $font-primary;
+    -webkit-text-stroke: 2.5px black;
+    font-size: 1.5em;
+    color: $font-color-primary;
+}
+
+blockquote {
+    border-left: 10px solid $font-color-primary;
+    padding-left: 10px;
+}
+
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+
+
+#about .container {
+    ul {
+        display: flex;
+        flex-wrap: wrap ;
+        text-align: center;
+        @extend %neon-shadow-glow;
+    }
+    li {
+        margin: 0.5em;
+    }
+}
+
+#about, #guidelines, #contribute, #styles {
+    margin: 2em 2em 4em 2em;
+}
+
+#about, #guidelines, #contribute, #styles, #profile-title {
+    h2, h3 {
+        font-family: $font-primary;
+        margin: 0;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        font-size: 2.2em;
+         }
+          p {
+             text-align: center;
+         }
+}
+
+#guidelines, #contribute, #styles, aside.profile{
+    h3, a, ul {
+        text-align: center
+    }
+}
+
+
+
+h4#profile-title {
+    font-family: $font-primary;
+    margin: 0;
+    color: white;
+    grid-column: 2;
+    -webkit-text-stroke: 2.5px black;
+    font-size: 2em; 
+    text-align: center;
+}
+
+.page-footer .container {
+    background-color: $nav-bg-color;
+    text-align: center;
+    color: $footer-font-color;
+    ul { 
+        display: flex;
+        justify-content: space-evenly;
+        li svg {
+            @extend %svg-shared; 
+        }
+    }  
+}
+
+#about .container, #guidelines .container, #contribute .container, .profile .container, #styles .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    p, blockquote, ul, h3, ol, a {
+        grid-column: 2;
+    }
+}
+
+
+//responsive design - note to style, min-width better. max-width is desktop first 
+$breakpoint-smaller-screen: 900px;
+
+@media only screen and (max-width: $breakpoint-smaller-screen) {
+    
+    nav {
+       
+        ul { 
+            padding: 0.5em;
+            font-size: 1em;
+        }
+    }
+  
+    #about .container, #guidelines .container, #contribute .container, .profile .container, #styles .container {
+        display: block;
+        p, blockquote, ul, h3, ol, a {
+            text-align: left;
+        }
+    }
+
+    h4#profile-title {
+        text-align: left;
+    }
+    aside.profile {
+        margin-left: 2em;
+    }
+  }
+
+
+
+
