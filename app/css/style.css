@@ -5,8 +5,8 @@
   src: url("PricedownBl-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: 'Rage', Fallback, sans-serif;
-  src: url("Rage.ttf") format("truetype"); }
+  font-family: 'Streamster', Fallback, sans-serif;
+  src: url("Streamster.otf") format("truetype"); }
 
 @font-face {
   font-family: 'Vice City Sans', sans-serif;
@@ -69,7 +69,7 @@ header {
     font-size: 8.5em;
     margin: 0; }
   header h2 {
-    font-family: "Rage";
+    font-family: "Streamster";
     font-size: 2.5em;
     text-decoration: underline;
     transform: rotate(-3.5deg); }
@@ -151,7 +151,7 @@ h4#profile-title {
   #about .container p, #about .container blockquote, #about .container ul, #about .container h3, #about .container ol, #about .container a, #guidelines .container p, #guidelines .container blockquote, #guidelines .container ul, #guidelines .container h3, #guidelines .container ol, #guidelines .container a, #contribute .container p, #contribute .container blockquote, #contribute .container ul, #contribute .container h3, #contribute .container ol, #contribute .container a, .profile .container p, .profile .container blockquote, .profile .container ul, .profile .container h3, .profile .container ol, .profile .container a, #styles .container p, #styles .container blockquote, #styles .container ul, #styles .container h3, #styles .container ol, #styles .container a {
     grid-column: 2; }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   nav ul {
     padding: 0.5em;
     font-size: 1em; }
