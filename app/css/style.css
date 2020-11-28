@@ -348,3 +348,49 @@ h4#profile-title {
     padding: 0;
 }
 }
+
+@media (min-width: 1500px) {
+  :root {
+    font-size: 32px;
+  }
+  body a {
+    -webkit-text-stroke: 5px black;
+  }
+  header h1 {
+    -webkit-text-stroke: 12px black;
+    font-size: 7em;
+  }
+  header h2 {
+    font-size: 2.2em;
+    margin: 1em 2em;
+    transform: rotate(-3.5deg);
+  }
+  header p {
+    font-size: 1.8em;
+    margin: 2em;
+  }
+  header a {
+    font-size: 1em;
+  }
+  header .link-github {
+    font-size: 2.2em;
+  }
+  header .link-github svg {
+    height: 50px;
+    width: 50px;
+  }
+  strong, h4#profile-title {
+    -webkit-text-stroke: 5px black;
+  }
+  #about h2, #about h3, #guidelines h2, #guidelines h3, #contribute h2, #contribute h3, #styles h2, #styles h3, #profile-title h2, #profile-title h3 {
+    margin: 0;
+    -webkit-text-stroke: 5px black;
+}
+footer.page-footer {
+  font-size: 1.2em;
+}
+.page-footer .container ul li svg{
+  height: 50px;
+  width: 50px;
+}
+}
