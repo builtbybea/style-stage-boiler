@@ -1,44 +1,63 @@
 @font-face {
-  font-family: 'Pricedown', Fallback, sans-serif;
+  font-family: "Pricedown", Fallback, sans-serif;
   src: url("PricedownBl-Regular.ttf") format("truetype");
   src: url("PricedownBl-Regular.woff") format("woff");
-  src: url("PricedownBl-Regular.woff2") format("woff2"); }
+  src: url("PricedownBl-Regular.woff2") format("woff2");
+}
 
 @font-face {
-  font-family: 'Streamster', Fallback, sans-serif;
-  src: url("Streamster.ttf") format("truetype"); }
+  font-family: "Streamster", Fallback, sans-serif;
+  src: url("Streamster.ttf") format("truetype");
+}
 
 @font-face {
-  font-family: 'Vice City Sans', sans-serif;
-  src: url("Vice City Sans.ttf") format("truetype"); }
+  font-family: "Vice City Sans", sans-serif;
+  src: url("Vice City Sans.ttf") format("truetype");
+}
 
-header .link-github svg, .page-footer .container ul li svg {
+header .link-github svg,
+.page-footer .container ul li svg {
   fill: #e09a18;
   stroke: black;
   stroke-width: 3px;
   height: 20px;
-  width: 20px; }
+  width: 20px;
+}
 
-header h2, #about .container ul {
-  text-shadow: 3px 3px #ff4da6; }
+header h2,
+#about .container ul {
+  text-shadow: 3px 3px #ff4da6;
+}
 
 body {
   overflow-x: hidden;
   color: white;
   background-color: #f4afc2;
-  background: linear-gradient(180deg, #6f2e9b 0%, #af3483 20%, #672762 40%, #6f2e9b 60%, #af3483 80%, #241047 100%);
+  background: linear-gradient(
+    180deg,
+    #6f2e9b 0%,
+    #af3483 20%,
+    #672762 40%,
+    #6f2e9b 60%,
+    #af3483 80%,
+    #241047 100%
+  );
   font-family: "Vice City Sans";
-  margin: 0; }
-  body .skip-link {
-    display: none; }
-  body a {
-    font-family: "Pricedown";
-    text-decoration: none;
-    color: white;
-    -webkit-text-stroke: 2.5px black;
-    font-size: 1.3em; }
-  body a:hover {
-    text-decoration: underline; }
+  margin: 0;
+}
+body .skip-link {
+  display: none;
+}
+body a {
+  font-family: "Pricedown";
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 2.5px black;
+  font-size: 1.3em;
+}
+body a:hover {
+  text-decoration: underline;
+}
 
 body::before {
   content: " ";
@@ -48,10 +67,12 @@ body::before {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   z-index: 2;
   background-size: 100% 5px, 5px 100%;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 header {
   background-image: url("http://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Silhouettes-PNG/Palm_Trees_Silhouette_PNG_Clip_Art_Image.png?m=1463584089");
@@ -62,71 +83,114 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
-  header h1 {
-    font-family: "Pricedown";
-    -webkit-text-stroke: 8px black;
-    font-size: 8.5em;
-    margin: 0; }
-  header h2 {
-    font-family: "Streamster";
-    font-size: 2.5em;
-    text-decoration: underline;
-    transform: rotate(-3.5deg); }
-  header P {
-    font-size: 1.5em;
-    margin-bottom: 1.6em; }
-  header .link-github {
-    font-size: 1.6em; }
+  text-align: center;
+}
+header h1 {
+  font-family: "Pricedown";
+  -webkit-text-stroke: 8px black;
+  font-size: 8.5em;
+  margin: 0;
+}
+header h2 {
+  font-family: "Streamster";
+  font-size: 2.5em;
+  text-decoration: underline;
+  transform: rotate(-3.5deg);
+}
+header P {
+  font-size: 1.5em;
+  margin-bottom: 1.6em;
+}
+header .link-github {
+  font-size: 1.6em;
+}
 
 nav {
   background-color: rgba(255, 250, 250, 0.938);
   width: 100vw;
   position: sticky;
-  top: 0; }
-  nav ul {
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.5em;
-    font-size: 1.3em; }
+  top: 0;
+}
+nav ul {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
 
 strong {
   font-family: "Pricedown";
   -webkit-text-stroke: 2.5px black;
   font-size: 1.5em;
-  color: white; }
+  color: white;
+}
 
 blockquote {
   border-left: 10px solid white;
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 
 ul li {
-  list-style: none; }
+  list-style: none;
+}
 
 #about .container ul {
   display: flex;
   flex-wrap: wrap;
-  text-align: center; }
+  text-align: center;
+}
 
 #about .container li {
-  margin: 0.5em; }
+  margin: 0.5em;
+}
 
-#about, #guidelines, #contribute, #styles {
-  margin: 2em 2em 4em 2em; }
+#about,
+#guidelines,
+#contribute,
+#styles {
+  margin: 2em 2em 4em 2em;
+}
 
-#about h2, #about h3, #guidelines h2, #guidelines h3, #contribute h2, #contribute h3, #styles h2, #styles h3, #profile-title h2, #profile-title h3 {
+#about h2,
+#about h3,
+#guidelines h2,
+#guidelines h3,
+#contribute h2,
+#contribute h3,
+#styles h2,
+#styles h3,
+#profile-title h2,
+#profile-title h3 {
   font-family: "Pricedown";
   margin: 0;
   color: white;
   -webkit-text-stroke: 3px black;
-  font-size: 2.2em; }
+  font-size: 2.2em;
+}
 
-#about p, #guidelines p, #contribute p, #styles p, #profile-title p {
-  text-align: center; }
+#about p,
+#guidelines p,
+#contribute p,
+#styles p,
+#profile-title p {
+  text-align: center;
+}
 
-#guidelines h3, #guidelines a, #guidelines ul, #contribute h3, #contribute a, #contribute ul, #styles h3, #styles a, #styles ul, aside.profile h3, aside.profile a, aside.profile ul {
-  text-align: center; }
+#guidelines h3,
+#guidelines a,
+#guidelines ul,
+#contribute h3,
+#contribute a,
+#contribute ul,
+#styles h3,
+#styles a,
+#styles ul,
+aside.profile h3,
+aside.profile a,
+aside.profile ul {
+  text-align: center;
+}
 
 h4#profile-title {
   font-family: "Pricedown";
@@ -135,31 +199,108 @@ h4#profile-title {
   grid-column: 2;
   -webkit-text-stroke: 2.5px black;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+}
 
 .page-footer .container {
   background-color: rgba(255, 250, 250, 0.938);
   text-align: center;
-  color: #241047; }
-  .page-footer .container ul {
-    display: flex;
-    justify-content: space-evenly; }
+  color: #241047;
+}
+.page-footer .container ul {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-#about .container, #guidelines .container, #contribute .container, .profile .container, #styles .container {
+#about .container,
+#guidelines .container,
+#contribute .container,
+.profile .container,
+#styles .container {
   display: grid;
-  grid-template-columns: 1fr 2fr; }
-  #about .container p, #about .container blockquote, #about .container ul, #about .container h3, #about .container ol, #about .container a, #guidelines .container p, #guidelines .container blockquote, #guidelines .container ul, #guidelines .container h3, #guidelines .container ol, #guidelines .container a, #contribute .container p, #contribute .container blockquote, #contribute .container ul, #contribute .container h3, #contribute .container ol, #contribute .container a, .profile .container p, .profile .container blockquote, .profile .container ul, .profile .container h3, .profile .container ol, .profile .container a, #styles .container p, #styles .container blockquote, #styles .container ul, #styles .container h3, #styles .container ol, #styles .container a {
-    grid-column: 2; }
+  grid-template-columns: 1fr 2fr;
+}
+#about .container p,
+#about .container blockquote,
+#about .container ul,
+#about .container h3,
+#about .container ol,
+#about .container a,
+#guidelines .container p,
+#guidelines .container blockquote,
+#guidelines .container ul,
+#guidelines .container h3,
+#guidelines .container ol,
+#guidelines .container a,
+#contribute .container p,
+#contribute .container blockquote,
+#contribute .container ul,
+#contribute .container h3,
+#contribute .container ol,
+#contribute .container a,
+.profile .container p,
+.profile .container blockquote,
+.profile .container ul,
+.profile .container h3,
+.profile .container ol,
+.profile .container a,
+#styles .container p,
+#styles .container blockquote,
+#styles .container ul,
+#styles .container h3,
+#styles .container ol,
+#styles .container a {
+  grid-column: 2;
+}
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 750px) {
   nav ul {
     padding: 0.5em;
-    font-size: 1em; }
-  #about .container, #guidelines .container, #contribute .container, .profile .container, #styles .container {
-    display: block; }
-    #about .container p, #about .container blockquote, #about .container ul, #about .container h3, #about .container ol, #about .container a, #guidelines .container p, #guidelines .container blockquote, #guidelines .container ul, #guidelines .container h3, #guidelines .container ol, #guidelines .container a, #contribute .container p, #contribute .container blockquote, #contribute .container ul, #contribute .container h3, #contribute .container ol, #contribute .container a, .profile .container p, .profile .container blockquote, .profile .container ul, .profile .container h3, .profile .container ol, .profile .container a, #styles .container p, #styles .container blockquote, #styles .container ul, #styles .container h3, #styles .container ol, #styles .container a {
-      text-align: left; }
+    font-size: 1em;
+  }
+  #about .container,
+  #guidelines .container,
+  #contribute .container,
+  .profile .container,
+  #styles .container {
+    display: block;
+  }
+  #about .container p,
+  #about .container blockquote,
+  #about .container ul,
+  #about .container h3,
+  #about .container ol,
+  #about .container a,
+  #guidelines .container p,
+  #guidelines .container blockquote,
+  #guidelines .container ul,
+  #guidelines .container h3,
+  #guidelines .container ol,
+  #guidelines .container a,
+  #contribute .container p,
+  #contribute .container blockquote,
+  #contribute .container ul,
+  #contribute .container h3,
+  #contribute .container ol,
+  #contribute .container a,
+  .profile .container p,
+  .profile .container blockquote,
+  .profile .container ul,
+  .profile .container h3,
+  .profile .container ol,
+  .profile .container a,
+  #styles .container p,
+  #styles .container blockquote,
+  #styles .container ul,
+  #styles .container h3,
+  #styles .container ol,
+  #styles .container a {
+    text-align: left;
+  }
   h4#profile-title {
-    text-align: left; }
+    text-align: left;
+  }
   aside.profile {
-    margin-left: 2em; } }
+    margin-left: 2em;
+  }
+}
