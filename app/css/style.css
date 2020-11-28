@@ -304,3 +304,47 @@ h4#profile-title {
     margin-left: 2em;
   }
 }
+
+@media (max-width: 550px) {
+  :root {
+    font-size: 0.7em;
+  }
+  body a {
+    -webkit-text-stroke: 1.2px black;
+    font-size: 1.1em;
+  }
+  header h1 {
+    font-size: 6em;
+    -webkit-text-stroke: 4px black;
+  }
+  header h2 {
+    font-size: 2em;
+  }
+  header a {
+    -webkit-text-stroke: 2px black;
+  }
+  nav ul {
+    margin: 0;
+  }
+  #about h2,
+  #about h3,
+  #guidelines h2,
+  #guidelines h3,
+  #contribute h2,
+  #contribute h3,
+  #styles h2,
+  #styles h3,
+  #profile-title h2,
+  #profile-title h3 {
+    -webkit-text-stroke: 2px black;
+    font-size: 2em;
+  }
+  strong {
+    -webkit-text-stroke: 1.5px black;
+    font-size: 1.3em;
+    color: white;
+  }
+  .page-footer .container ul {
+    padding: 0;
+}
+}
