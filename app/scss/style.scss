@@ -1,37 +1,25 @@
 /// Add your SCSS in here, it will autocompile to style.css
-// @font-face {
-//   font-family: "Pricedown", Fallback, sans-serif;
-//   src: url("PricedownBl-Regular.ttf") format("truetype");
-//   src: url("PricedownBl-Regular.woff") format("woff");
-//   src: url("PricedownBl-Regular.woff2") format("woff2");
-// }
-@charset "UTF-8";
-
 @font-face {
-  font-family: "Pricedown", sans-serif;
-  src: url('pricedown_bl-webfont.eot');
-  src: url('pricedown_bl-webfont.eot?#iefix') format('embedded-opentype'),
-       url('pricedown_bl-webfont.woff2') format('woff2'),
-       url('pricedown_bl-webfont.woff') format('woff'),
-       url('pricedown_bl-webfont.ttf') format('truetype');
+  font-family: "Pricedown_Main";
+  src: url('../fonts/pricedown_bl-webfont.woff2') format('woff2'),url('../fonts/pricedown_bl-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: "Streamster", Fallback, sans-serif;
-  src: url("Streamster.ttf") format("truetype");
+  font-family: "Streamster_Subtitle";
+  src: url('../fonts/streamster-webfont.woff') format('woff2'), url('../fonts/streamster-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Vice City Sans", sans-serif;
-  src: url("Vice City Sans.ttf") format("truetype");
+  font-family: "Vice_City_Sans_Body";
+  src: url("../fonts/vicecitysans-webfont.woff2") format('woff2'), url("../fonts/vicecitysans-webfont.woff") format('woff');
 }
 
-$font-primary: "Pricedown";
-$font-secondary: "Streamster";
-$body-font: "Vice City Sans";
+$font-primary: "Pricedown_Main";
+$font-secondary: "Streamster_Subtitle";
+$body-font: "Vice_City_Sans_Body";
 $font-color-primary: rgb(255, 255, 255);
 $footer-font-color: rgba(36, 16, 71, 1);
 $bg-color: rgb(244, 175, 194);

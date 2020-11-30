@@ -1,17 +1,16 @@
 @font-face {
-  font-family: "Pricedown", sans-serif;
-  src: url("pricedown_bl-webfont.eot");
-  src: url("pricedown_bl-webfont.eot?#iefix") format("embedded-opentype"), url("pricedown_bl-webfont.woff2") format("woff2"), url("pricedown_bl-webfont.woff") format("woff"), url("pricedown_bl-webfont.ttf") format("truetype");
+  font-family: "Pricedown_Main";
+  src: url("../fonts/pricedown_bl-webfont.woff2") format("woff2"), url("../fonts/pricedown_bl-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "Streamster", Fallback, sans-serif;
-  src: url("Streamster.ttf") format("truetype"); }
+  font-family: "Streamster_Subtitle";
+  src: url("../fonts/streamster-webfont.woff") format("woff2"), url("../fonts/streamster-webfont.woff") format("woff"); }
 
 @font-face {
-  font-family: "Vice City Sans", sans-serif;
-  src: url("Vice City Sans.ttf") format("truetype"); }
+  font-family: "Vice_City_Sans_Body";
+  src: url("../fonts/vicecitysans-webfont.woff2") format("woff2"), url("../fonts/vicecitysans-webfont.woff") format("woff"); }
 
 header .link-github svg, .page-footer .container ul li svg {
   fill: #e09a18;
@@ -28,12 +27,12 @@ body {
   color: white;
   background-color: #f4afc2;
   background: linear-gradient(180deg, #6f2e9b 0%, #af3483 20%, #672762 40%, #6f2e9b 60%, #af3483 80%, #241047 100%);
-  font-family: "Vice City Sans";
+  font-family: "Vice_City_Sans_Body";
   margin: 0; }
   body .skip-link {
     display: none; }
   body a {
-    font-family: "Pricedown";
+    font-family: "Pricedown_Main";
     text-decoration: none;
     color: white;
     -webkit-text-stroke: 2.5px black;
@@ -65,12 +64,12 @@ header {
   align-items: center;
   text-align: center; }
   header h1 {
-    font-family: "Pricedown";
+    font-family: "Pricedown_Main";
     -webkit-text-stroke: 8px black;
     font-size: 8.5em;
     margin: 0; }
   header h2 {
-    font-family: "Streamster";
+    font-family: "Streamster_Subtitle";
     font-size: 2.5em;
     text-decoration: underline;
     transform: rotate(-3.5deg); }
@@ -93,7 +92,7 @@ nav {
     font-size: 1.3em; }
 
 strong {
-  font-family: "Pricedown";
+  font-family: "Pricedown_Main";
   -webkit-text-stroke: 2.5px black;
   font-size: 1.5em;
   color: white; }
@@ -129,7 +128,7 @@ ul li {
 #styles h3,
 #profile-title h2,
 #profile-title h3 {
-  font-family: "Pricedown";
+  font-family: "Pricedown_Main";
   margin: 0;
   color: white;
   -webkit-text-stroke: 3px black;
@@ -157,7 +156,7 @@ aside.profile ul {
   text-align: center; }
 
 h4#profile-title {
-  font-family: "Pricedown";
+  font-family: "Pricedown_Main";
   margin: 0;
   color: white;
   grid-column: 2;
