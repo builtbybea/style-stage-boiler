@@ -23,13 +23,13 @@ header h2 {
   text-shadow: 3px 3px #ff4da6; }
 
 #about .container ul {
-  text-shadow: 3px 3px #6f2e9b; }
+  text-shadow: 3px 3px #7d12ff; }
 
 body {
   overflow-x: hidden;
   color: white;
   background-color: #f4afc2;
-  background: linear-gradient(180deg, #6f2e9b 0%, #c12d8b 18%, #f45071 46%, #ff8659 83%, #ffc052 100%);
+  background: linear-gradient(180deg, #6f2e9b 10%, #c12d8b 20%, #f45071 60%, #ff8659 90%, #ffc052 100%);
   font-family: "Vice_City_Sans_Body";
   margin: 0; }
   body .skip-link {
