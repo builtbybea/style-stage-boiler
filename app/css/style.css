@@ -19,14 +19,17 @@ header .link-github svg, .page-footer .container ul li svg {
   height: 20px;
   width: 20px; }
 
-header h2, #about .container ul {
+header h2 {
   text-shadow: 3px 3px #ff4da6; }
+
+#about .container ul {
+  text-shadow: 3px 3px #6f2e9b; }
 
 body {
   overflow-x: hidden;
   color: white;
   background-color: #f4afc2;
-  background: linear-gradient(180deg, #6f2e9b 0%, #af3483 20%, #672762 40%, #6f2e9b 60%, #af3483 80%, #241047 100%);
+  background: linear-gradient(180deg, #6f2e9b 0%, #c12d8b 18%, #f45071 46%, #ff8659 83%, #ffc052 100%);
   font-family: "Vice_City_Sans_Body";
   margin: 0; }
   body .skip-link {
