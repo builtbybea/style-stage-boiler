@@ -1,9 +1,22 @@
 /// Add your SCSS in here, it will autocompile to style.css
+// @font-face {
+//   font-family: "Pricedown", Fallback, sans-serif;
+//   src: url("PricedownBl-Regular.ttf") format("truetype");
+//   src: url("PricedownBl-Regular.woff") format("woff");
+//   src: url("PricedownBl-Regular.woff2") format("woff2");
+// }
+@charset "UTF-8";
+
 @font-face {
-  font-family: "Pricedown", Fallback, sans-serif;
-  src: url("PricedownBl-Regular.ttf") format("truetype");
-  src: url("PricedownBl-Regular.woff") format("woff");
-  src: url("PricedownBl-Regular.woff2") format("woff2");
+  font-family: "Pricedown", sans-serif;
+  src: url('pricedown_bl-webfont.eot');
+  src: url('pricedown_bl-webfont.eot?#iefix') format('embedded-opentype'),
+       url('pricedown_bl-webfont.woff2') format('woff2'),
+       url('pricedown_bl-webfont.woff') format('woff'),
+       url('pricedown_bl-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {
