@@ -30,7 +30,11 @@ body {
   font-family: "Vice_City_Sans_Body";
   margin: 0; }
   body .skip-link {
-    display: none; }
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px; }
   body a {
     font-family: "Pricedown_Main";
     text-decoration: none;

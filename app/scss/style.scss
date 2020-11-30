@@ -62,7 +62,11 @@ body {
 
   margin: 0;
   .skip-link {
-    display: none;
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
   }
   a {
     font-family: $font-primary;
